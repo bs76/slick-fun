@@ -13,6 +13,7 @@ object Main extends App {
   //imports profile *and* Database for us
   import profile.simple._
   import scala.slick.jdbc.{GetResult, StaticQuery => Q}
+  import Q.interpolation
 
   def db = Database.forURL("jdbc:sqlite:./db/example03_gen.db", driver = "org.sqlite.JDBC")
 
